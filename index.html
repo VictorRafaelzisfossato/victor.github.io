@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dublagem Victor - Comunidade Online</title>
+    <style>
+        /* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navegação */
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Seção principal */
+.main-section {
+    background-image: url('oi/duster\ antiga.jpg.jpg'); /* Você pode substituir pela imagem de fundo que desejar */
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-section .intro h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.main-section .intro p {
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff3311;
+}
+
+/* Seção da Comunidade */
+.community-section {
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.community-section h2 {
+    margin-bottom: 20px;
+}
+
+.community-forum ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.community-forum li {
+    margin: 10px 0;
+}
+
+.community-forum a {
+    color: #333;
+    text-decoration: none;
+}
+
+.community-forum a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de Gravação e Upload */
+.upload-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.upload-section h2 {
+    margin-bottom: 20px;
+}
+
+.upload-form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.upload-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.upload-form input[type="file"] {
+    margin-bottom: 20px;
+}
+
+.upload-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-form button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para gravação */
+.recording {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.recording p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+audio {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Botões de gravação */
+#startRecording,
+#stopRecording {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#stopRecording {
+    background-color: #dc3545;
+}
+
+#startRecording:hover {
+    background-color: #0056b3;
+}
+
+#stopRecording:hover {
+    background-color: #c82333;
+}
+
+/* Seção de Contato */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-form {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav>
+        <div class="logo">Dublagem Victor</div>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#community">Comunidade</a></li>
+            <li><a href="#upload">Gravar/Upload</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li><a href="#login">Entrar</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção principal de apresentação -->
+    <section id="home" class="main-section">
+        <div class="intro">
+            <h1>Bem-vindo ao Dublagem Victor</h1>
+            <p>Junte-se à nossa comunidade e contribua com sua dublagem favorita de filmes ou grave novas interpretações diretamente aqui!</p>
+            <a href="#community" class="btn">Entrar na Comunidade</a>
+        </div>
+    </section>
+
+    <!-- Seção da Comunidade -->
+    <section id="community" class="community-section">
+        <h2>Explore a Comunidade</h2>
+        <p>Conecte-se com outros dubladores, participe de discussões sobre seus filmes favoritos e aprenda novas técnicas de dublagem.</p>
+        <div class="community-forum">
+            <h3>Fórum de Discussão</h3>
+            <ul>
+                <li><a href="#">Discussão sobre Filmes Clássicos</a></li>
+                <li><a href="#">Melhores Práticas de Dublagem</a></li>
+                <li><a href="#">Técnicas de Voz para Personagens</a></li>
+                <li><a href="#">Discussão Geral</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção de Gravação e Upload -->
+    <section id="upload" class="upload-section">
+        <h2>Grave ou Envie sua Dublagem</h2>
+        <p>Grave um áudio de até 1000 segundos diretamente no navegador ou envie sua própria dublagem já gravada.</p>
+
+        <!-- Interface de Gravação -->
+        <div class="recording">
+            <button id="startRecording" class="btn">Iniciar Gravação</button>
+            <button id="stopRecording" class="btn" disabled>Parar Gravação</button>
+            <p id="timer">Tempo: 0s</p>
+            <audio id="audioPlayback" controls></audio>
+        </div>
+
+        <!-- Interface de Upload -->
+        <form class="upload-form">
+            <label for="file-upload">Ou selecione o arquivo de dublagem:</label>
+            <input type="file" id="file-upload" name="file-upload" accept="audio/*">
+            <button type="submit" class="btn">Enviar Dublagem</button>
+        </form>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="contact-section">
+        <h2>Entre em Contato</h2>
+        <p>Tem dúvidas ou sugestões? Envie-nos uma mensagem!</p>
+        <form class="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dublagem Victor. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Variáveis para gravação de áudio
+let mediaRecorder;
+let audioChunks = [];
+let recordingTimer;
+let timeLimit = 1000;  // Limite de tempo de gravação (1000 segundos)
+let currentTime = 0;
+
+// Elementos da página
+const startRecordingButton = document.getElementById('startRecording');
+const stopRecordingButton = document.getElementById('stopRecording');
+const timerDisplay = document.getElementById('timer');
+const audioPlayback = document.getElementById('audioPlayback');
+
+// Função para iniciar a gravação
+startRecordingButton.addEventListener('click', () => {
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.start();
+
+        audioChunks = [];
+        mediaRecorder.addEventListener('dataavailable', event => {
+            audioChunks.push(event.data);
+        });
+
+        startTimer();
+        startRecordingButton.disabled = true;
+        stopRecordingButton.disabled = false;
+    });
+});
+
+// Função para parar a gravação
+stopRecordingButton.addEventListener('click', () => {
+    mediaRecorder.stop();
+    stopRecordingButton.disabled = true;
+    startRecordingButton.disabled = false;
+    stopTimer();
+
+    mediaRecorder.addEventListener('stop', () => {
+        const audioBlob = new Blob(audioChunks, { type: 'audio/mpeg' });
+        const audioUrl = URL.createObjectURL(audioBlob);
+        audioPlayback.src = audioUrl;
+    });
+});
+
+// Função para iniciar o timer
+function startTimer() {
+    currentTime = 0;
+    recordingTimer = setInterval(() => {
+        currentTime++;
+        timerDisplay.textContent = `Tempo: ${currentTime}s`;
+
+        if (currentTime >= timeLimit) {
+            stopRecordingButton.click();
+        }
+    }, 1000);
+}
+
+// Função para parar o timer
+function stopTimer() {
+    clearInterval(recordingTimer);
+    timerDisplay.textContent = `Tempo: ${currentTime}s`;
+}
+
+// Função de upload de dublagem (simulação)
+document.querySelector('.upload-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Dublagem enviada com sucesso!');
+});
+
+    </script>
+</body>
+</html>
